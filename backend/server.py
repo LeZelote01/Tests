@@ -22,6 +22,10 @@ from auth import (
 )
 from website_exporter import WebsiteExporter
 from hosting_manager import HostingManager
+# Import Vercel version if in production
+import os
+if os.getenv("ENVIRONMENT") == "production":
+    from vercel_hosting_manager import VercelHostingManager as HostingManager
 
 # Load environment variables
 load_dotenv()
