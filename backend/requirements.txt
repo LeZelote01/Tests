@@ -41,3 +41,6 @@ PyJWT==2.8.0
 # Template & Export
 Jinja2==3.1.2
 python-slugify==8.0.1
+
+# Vercel compatibility
+mangum==0.17.0
